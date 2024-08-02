@@ -274,6 +274,8 @@ REST_FRAMEWORK = {
         "rest_framework.parsers.FormParser",
     ),
     "TEST_REQUEST_DEFAULT_FORMAT": "json",
+    "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
 }
+
 
 CORS_URLS_REGEX = r"^/api/.*$"
